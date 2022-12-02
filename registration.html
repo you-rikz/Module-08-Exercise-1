@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="validation.js"></script> -->
+</head>
+<body>
+    <div class="container">
+    <h1 style="text-align: center;">Registration</h1>
+    <form name ="myForm" onsubmit="return(validate());">
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="fullname"/>
+            <div class="error" id="namerror"></div>
+        </div>
+        <div ng-app="">
+            <label>Address</label>
+            <input type="text" name="address" ng-model="address" required/>
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" name="email"/>
+            <div class="error" id="emailerorr"></div>
+        </div>
+        <input type="submit" value="Submit"/>
+        <script typ="text/javascript" src="validation.js"></script>
+    </form>
+</div>
+    
+</body>
+</html>
